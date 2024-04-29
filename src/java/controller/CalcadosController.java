@@ -5,9 +5,9 @@ package controller;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Base64;
 import java.util.List;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -36,17 +36,24 @@ public class CalcadosController extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String url = "/WEB-INF/jsp/calcados.jsp";
-    
-    Categoria categoriaCalcados = new Categoria();
-    categoriaCalcados.setNome("Calcados"); 
-    
-    ProdutoDAO dao = new ProdutoDAO();
-    List<Produto> produtos = dao.listarPorCategoria(categoriaCalcados);
-    
-    request.setAttribute("produtos", produtos);
-    
-    RequestDispatcher d = getServletContext().getRequestDispatcher(url);
-    d.forward(request, response);
+
+        Categoria categoriaCalcados = new Categoria();
+        categoriaCalcados.setNome("Calcados");
+        ProdutoDAO dao = new ProdutoDAO();
+
+        List<Produto> produto = dao.listarPorCategoria(categoriaCalcados);
+        for (int i = 0; i < produto.size(); i++) {
+            if (produto.get(i).getImagemBytes() != null) {
+                String imagemBase64 = Base64.getEncoder().encodeToString(produto.get(i).getImagemBytes());
+                produto.get(i).setImagemBase64(imagemBase64);
+            }
+
+        }
+
+        request.setAttribute("produtos", produto);
+
+        RequestDispatcher d = getServletContext().getRequestDispatcher(url);
+        d.forward(request, response);
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

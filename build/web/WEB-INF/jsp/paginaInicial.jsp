@@ -95,21 +95,21 @@
 
             <div class="card-group" id="group-card">
                 <div class="card" id="cartoes">
-                    <img src="./images/Novidades/novidade-1.jpg" alt=""/>
+                    <img src="images/Em Breve/BONÉ ABA CURVA STRUCTURED JOCKEY.png" alt=""/>
                     <div class="card-body">
                         <h5 class="card-title">BONÉ ABA CURVA STRUCTURED JOCKEY</h5>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="./images/Novidades/novidade-2.jpg" alt=""/>
+                    <img src="images/Em Breve/OCULOS MAG LOGO THRASHER PRETO BRANCO.png" alt=""/>
                     <div class="card-body">
                         <h5 class="card-title">ÓCULOS MAG LOGO THRASHER PRETO BRANCO</h5>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="./images/Novidades/novidade-3.jpg" alt=""/>
+                    <img src="images/Em Breve/POCHETE RETRO BAW S.png" alt=""/>
                     <div class="card-body">
-                        <h5 class="card-title">POCHETE RETRO BAW SPORT VINGATE</h5>
+                        <h5 class="card-title">POCHETE RETRO BAW</h5>
                     </div>
                 </div>
             </div>

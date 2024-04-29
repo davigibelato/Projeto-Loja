@@ -7,6 +7,7 @@ package controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Base64;
 import java.util.List;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -40,9 +41,16 @@ public class FemininoController extends HttpServlet {
     categoriaFeminino.setNome("Feminino"); // Supondo que o nome da categoria masculina seja "Masculino"
     
     ProdutoDAO dao = new ProdutoDAO();
-    List<Produto> produtos = dao.listarPorCategoria(categoriaFeminino);
+    List<Produto> produto = dao.listarPorCategoria(categoriaFeminino);
+        for (int i = 0; i < produto.size(); i++) {
+            if (produto.get(i).getImagemBytes() != null) {
+                String imagemBase64 = Base64.getEncoder().encodeToString(produto.get(i).getImagemBytes());
+                produto.get(i).setImagemBase64(imagemBase64);
+            }
+
+        }
     
-    request.setAttribute("produtos", produtos);
+    request.setAttribute("produtos", produto);
     
     RequestDispatcher d = getServletContext().getRequestDispatcher(url);
     d.forward(request, response);

@@ -7,6 +7,3 @@ servlet but should be the only JSP outside of WEB-INF.
 --%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <% response.sendRedirect("./login"); %>
-<link href="styles/header.css" rel="stylesheet" type="text/css"/>
-<link href="styles/masculino.css" rel="stylesheet" type="text/css"/>
-<link href="styles/paginaInicial.css" rel="stylesheet" type="text/css"/>
