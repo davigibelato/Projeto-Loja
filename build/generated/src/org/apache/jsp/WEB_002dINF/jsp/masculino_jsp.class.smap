@@ -1,0 +1,15 @@
+SMAP
+masculino_jsp.java
+JSP
+*S JSP
+*F
++ 0 masculino.jsp
+WEB-INF/jsp/masculino.jsp
+*L
+5,52:54
+56:131,11
+57,4:142
+61,2:146,3
+63,5:152
+67,6:108
+*E

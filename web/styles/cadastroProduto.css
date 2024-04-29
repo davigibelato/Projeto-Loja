@@ -1,0 +1,69 @@
+main {
+    background-color: #ecf0f1;
+    height: 100vh;
+ }
+ 
+ main .center-text {
+     display: flex;
+     justify-content: center;
+     padding-top: 20px ;
+ }
+ 
+ main .center-text h1 {
+     color: black;
+     font-family: "Roboto Slab", sans-serif;
+ }
+ 
+ main .form-cadastro-produtos {
+     padding: 50px 0;
+     margin: 0 150px;
+     display: flex;
+     gap: 300px
+ }
+ 
+ main .form-cadastro-produtos .input-box {
+     padding: 20px 0;
+ }
+ 
+ main .form-cadastro-produtos .input-box input {
+     padding: 0 10px;
+     width: 650px;
+     height: 35px;
+ }
+ 
+ main .form-cadastro-produtos .input-box select {
+     padding: 0 10px;
+     width: 650px;
+     height: 35px;
+ }
+ 
+ 
+ main .form-cadastro-produtos .input-image {
+     display: flex;
+     flex-direction: column;
+     padding: 20px 0;
+ } 
+ 
+ main .form-cadastro-produtos .input-image input {
+     padding: 25px 0;
+ }
+ 
+ 
+ main .form-cadastro-produtos .right-box {
+     width: 35%;
+     border: 1px solid #286d34;
+     border-radius: 10px;
+ }
+ 
+ main .form-cadastro-produtos .right-box .image-box {
+     padding: 30px 0;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ main .form-cadastro-produtos .right-box .image-box .main-image {
+     height: 390px;
+     width: auto;
+ }

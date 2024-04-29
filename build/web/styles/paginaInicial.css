@@ -1,0 +1,106 @@
+#group-card{
+    margin: 80px;
+    margin-top: 50px;
+}
+
+.card{
+    padding: 20px;
+    border: none;
+}
+
+.card-title{
+    text-align: center;
+    font-size: 28px;
+}
+
+.destaques{
+    margin-top: 50px;
+}
+
+.title-novidades{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.h2-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background: rgba(0, 0, 0, .1);
+}
+
+.card-text{
+    text-align: center;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-preco{
+    color: #000000;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.footer{
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+    background: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.container-cards{
+    width: 25%;
+}
+
+#carouselExampleAutoplaying img{
+    width: 100%;
+}
+
+.card-group-des{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-group-des .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Alterado para alinhar o conteúdo verticalmente */
+    min-height: 350px; /* Definindo altura mínima */
+    width: 18rem; /* Definindo largura fixa */
+    border: 1px solid black;
+    margin: 20px;
+    overflow: hidden; /* Adicionado para evitar transbordamento */
+}
+
+.card-group-des .card .card-body {
+    text-align: center; /* Alinhando o texto ao centro */
+}
+
+.card-group-des .card img{
+    width: 230px;
+    height: 290px;
+}

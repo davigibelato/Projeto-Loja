@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.container-cadastrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: #CBE4FF;
+    width: 90%;
+}
+
+.input-field {
+    position: relative; /* Adicionado para definir um contexto de posicionamento para a mensagem de erro */
+    max-width: 200px;
+    width: 100%;
+    background-color: #fff;
+    margin: 10px 0 20px; /* Adicionado margem superior e inferior */
+    height: 45px;
+    border-radius: 35px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+}
+
+.card{
+    margin-bottom: 20px;
+}
+
+.input-field i {
+    text-align: center;
+    line-height: 45px;
+    color: #acacac;
+    transition: 0.5s;
+    font-size: 1.1rem;
+}
+
+.input-field input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.input-field input::placeholder {
+    color: #aaa;
+    font-weight: 500;
+}
+
+.btn-cadastrar {
+    width: 120px;
+    background-color: #333;
+    border: none;
+    outline: none;
+    height: 39px;
+    border-radius: 49px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-login:hover {
+    background-color: #415a77;
+}
+
+.container-img {
+    display: none;
+}
+
+.input-field input:focus {
+    outline: 0;
+}
+
+.input-field.sucess input {
+    border-color: #09c372;
+}
+
+.input-field.error input {
+    border-color: #ff3860;
+}
+
+.input-field .error {
+    position: absolute;
+    bottom: -20px; /* Alterado para bottom em vez de top */
+    left: 0;
+    z-index: 2;
+    color: #ff3860;
+    font-size: 15px;
+    white-space: nowrap;
+    margin-top: 5px; /* Adicionado para ajustar a posição da mensagem de erro */
+}
+
+@media (min-width: 760px) {
+
+    .container-cadastrar {
+        width: auto;
+    }
+
+    .input-field {
+        max-width: 380px;
+        width: 100%;
+        background-color: #fff;
+        margin: 10px 0 20px; /* Adicionado margem superior e inferior */
+        height: 55px;
+        border-radius: 35px;
+        display: grid;
+        grid-template-columns: 15% 85%;
+        padding: 0 0.4rem;
+    }
+
+    .input-field i {
+        text-align: center;
+        line-height: 55px;
+        color: #acacac;
+        transition: 0.5s;
+        font-size: 1.1rem;
+    }
+
+    .input-field input {
+        background: none;
+        outline: none;
+        border: none;
+        line-height: 1;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: #333;
+    }
+
+    .btn-cadastrar {
+        width: 150px;
+        background-color: #006CE1;
+        border: none;
+        outline: none;
+        height: 49px;
+        border-radius: 49px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin: 10px 0;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .container-cadastrar h1 {
+        color: #072ac8;
+    }
+
+    .container-img {
+        display: flex;
+    }
+
+    img {
+        width: 417px;
+    }
+}
